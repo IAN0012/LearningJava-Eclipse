@@ -1,0 +1,28 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class while_1 {
+
+	public static void main(String[] args) {
+		//   Fazer um programa que lê números
+		// inteiros até que um zero seja lido. Ao
+		// final mostra a soma dos números lidos.
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		int number, sum = 0;
+		
+		do{
+			System.out.println("Write a number");
+			number = sc.nextInt();
+			sum += number;
+			
+		}while(number == 0);
+		
+		System.out.println("The sum of values is: "+ sum);
+		
+		sc.close();
+		
+	}
+
+}
